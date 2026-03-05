@@ -1,0 +1,171 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhanu | Java Developer</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f4f6f9;
+        color: #333;
+    }
+
+    header {
+        background: #2c3e50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        background: #34495e;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #f39c12;
+    }
+
+    section {
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+        color: #2c3e50;
+        border-bottom: 2px solid #f39c12;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    button {
+        padding: 10px 20px;
+        background: #f39c12;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background: #e67e22;
+    }
+
+    footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    @media(max-width: 600px){
+        header h1 {
+            font-size: 24px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bhanu R B</h1>
+    <p>Aspiring Java Developer</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>I am a Computer Science student passionate about Java, Data Structures, and problem solving.</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message"></p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="card">
+        <ul>
+            <li>Java</li>
+            <li>Data Structures & Algorithms</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>SQL</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Student Management System</h3>
+        <p>Developed using Java to manage student records efficiently.</p>
+    </div>
+
+    <div class="card">
+        <h3>Banking Application</h3>
+        <p>Console-based banking system using Java and OOPS concepts.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: bhanu@email.com</p>
+        <p>GitHub: github.com/yourprofile</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Bhanu R B | All Rights Reserved</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerText = 
+        "Thank you for visiting my portfolio!";
+    }
+</script>
+
+</body>
+</html>
